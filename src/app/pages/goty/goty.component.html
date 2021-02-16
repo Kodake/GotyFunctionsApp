@@ -2,23 +2,18 @@
 
 <hr />
 
-<div class="row">
-    <div class="col">
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <div class="col" *ngFor="let juego of juegos">
+        <div class="card h-100">
+            <img [src]="juego.url" class="card-img-top img-size p-2" [alt]="juego.name">
+            <div class="card-body">
+                <h5 class="card-title">{{juego.name}}</h5>
+                <p class="card-text">Click aquí para votar</p>
 
-        <div class="card-columns">
-            
-            <div class="card" *ngFor="let juego of juegos">
-                <img [src]="juego.url" class="card-img-top img-size p-2" [alt]="juego.name">
-                <div class="card-body">
-                    <h5 class="card-title">{{juego.name}}</h5>
-                    <p class="card-text">Click aquí para votar</p>
-
-                    <button class="btn btn-block btn-outline-primary" (click)="votar(juego)">
-                        Votar
-                    </button>
-                </div>
+                <button class="btn btn-block w-100 btn-outline-primary" (click)="votar(juego)">
+                    Votar
+                </button>
             </div>
-
         </div>
     </div>
 </div>
