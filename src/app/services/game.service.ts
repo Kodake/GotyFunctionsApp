@@ -17,12 +17,13 @@ export class GameService {
   getJuegos(): Observable<Game[]> {
 
     if (this.juegos.length > 0) {
-      // no tenemos juegos
+      // No tenemos juegos
+      // Cargamos desde caché
       console.log('Desde caché');
       return of<Game[]>(this.juegos);
 
     } else {
-      console.log('Desde Internet');
+      // Cargamos desde internet
       return this.http.get<Game[]>(`${environment.url}/api/goty`)
         .pipe(
           tap(
