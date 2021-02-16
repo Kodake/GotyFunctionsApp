@@ -1,10 +1,12 @@
 export const environment = {
   production: true,
   url: ' https://us-central1-gotyfunctionsapi.cloudfunctions.net',
-  apiKey: "AIzaSyDLjeUIkKEMudloB36Yr5d3mFuKtIUEoG4",
-    authDomain: "gotyfunctionsapi.firebaseapp.com",
-    projectId: "gotyfunctionsapi",
-    storageBucket: "gotyfunctionsapi.appspot.com",
-    messagingSenderId: "418544416130",
-    appId: "1:418544416130:web:b257b227ae7d4737ad0b9b"
+  firebase: {
+    apiKey:                  "YOUR_KEY_HERE",
+    authDomain:              "YOUR_KEY_HERE",
+    projectId:               "YOUR_KEY_HERE",
+    storageBucket:           "YOUR_KEY_HERE",
+    messagingSenderId:       "YOUR_KEY_HERE",
+    appId:                   "YOUR_KEY_HERE"
+  }
 };
