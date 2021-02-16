@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: 'http://localhost:5000/gotyfunctionsapi/us-central1',
+  firebase: {
+    apiKey: "AIzaSyDLjeUIkKEMudloB36Yr5d3mFuKtIUEoG4",
+    authDomain: "gotyfunctionsapi.firebaseapp.com",
+    projectId: "gotyfunctionsapi",
+    storageBucket: "gotyfunctionsapi.appspot.com",
+    messagingSenderId: "418544416130",
+    appId: "1:418544416130:web:b257b227ae7d4737ad0b9b"
+  }
 };
 
 /*
